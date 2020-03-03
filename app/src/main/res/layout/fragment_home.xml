@@ -1,0 +1,813 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:background="#0093c4"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:src="@drawable/traveloka_icon" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textfield_layout"
+                android:layout_width="285dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="#ffffff">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/search"
+                    android:layout_width="397dp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="@android:color/transparent"
+                    android:drawableStart="@drawable/search"
+                    android:hint="@string/search"
+                    android:padding="16dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:src="@drawable/more_titik" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="49dp"
+                    android:layout_height="65dp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_70sdp"
+                    android:src="@drawable/flights" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:text="@string/flights" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="49dp"
+                    android:layout_height="65dp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_70sdp"
+                    android:src="@drawable/hotels" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_17sdp"
+                    android:text="@string/hotels" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="49dp"
+                    android:layout_height="65dp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_70sdp"
+                    android:src="@drawable/flight_and_hotel" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_25sdp"
+                    android:text="@string/flightandhotel" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="49dp"
+                    android:layout_height="65dp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_70sdp"
+                    android:src="@drawable/experience" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:text="@string/xperience" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="49dp"
+                    android:layout_height="65dp"
+                    android:layout_marginStart="@dimen/_18sdp"
+                    android:layout_marginTop="@dimen/_70sdp"
+                    android:src="@drawable/eats" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_30sdp"
+                    android:text="@string/eats" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="49dp"
+                    android:layout_height="65dp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_150sdp"
+                    android:src="@drawable/trains" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_13sdp"
+                    android:text="@string/trains" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="49dp"
+                    android:layout_height="65dp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_150sdp"
+                    android:src="@drawable/bus_and_shuttle" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_22sdp"
+                    android:text="@string/bus" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="49dp"
+                    android:layout_height="65dp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_150sdp"
+                    android:src="@drawable/airport_transfer" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:text="@string/airport" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="49dp"
+                    android:layout_height="65dp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_150sdp"
+                    android:src="@drawable/car_rental" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_24sdp"
+                    android:text="@string/car" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="49dp"
+                    android:layout_height="65dp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_150sdp"
+                    android:src="@drawable/all_products" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_22sdp"
+                    android:text="@string/all" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/horizontal_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="310dp"
+                        android:src="@drawable/bills" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:text="@string/bill" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="310dp"
+                        android:src="@drawable/movies" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:maxLines="2"
+                        android:text="@string/movies" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="310dp"
+                        android:src="@drawable/insurance" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/insurance" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="310dp"
+                        android:src="@drawable/visa" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_13sdp"
+                        android:text="@string/visa" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="310dp"
+                        android:src="@drawable/jr" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/jr" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="310dp"
+                        android:src="@drawable/international" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:text="@string/international" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="310dp"
+                        android:src="@drawable/gift" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_13sdp"
+                        android:text="@string/gift" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="310dp"
+                        android:src="@drawable/data" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_11sdp"
+                        android:text="@string/data" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="310dp"
+                        android:src="@drawable/flight_status" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:text="@string/status" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="310dp"
+                        android:src="@drawable/insurance" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/insurance" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="65dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="310dp"
+                        android:src="@drawable/insurance" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/insurance" />
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/traveloka_latest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/horizontal_one"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="@string/title_one"
+            android:textColor="#000"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/traveloka_latest"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="@string/desc" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/desc"
+            android:layout_marginTop="13dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/poster_1"
+                        android:layout_width="@dimen/_180sdp"
+                        android:layout_height="@dimen/_75sdp"
+                        android:src="@drawable/poster_1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_14sdp"
+                        android:text="@string/desc1"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_14sdp"
+                        android:maxLines="3"
+                        android:text="@string/desc1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/poster_2"
+                        android:layout_width="@dimen/_180sdp"
+                        android:layout_height="@dimen/_75sdp"
+                        android:src="@drawable/poster_2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_14sdp"
+                        android:text="@string/desc1"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_14sdp"
+                        android:maxLines="3"
+                        android:text="@string/desc1" />
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/traveloka_promos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="600dp"
+            android:text="@string/title_two"
+            android:textColor="#000"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold" />
+
+        <HorizontalScrollView
+            android:id="@+id/horizontal_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/traveloka_promos"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/traveloka_promos"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/promo1"
+                    android:layout_width="322dp"
+                    android:layout_height="219dp"
+                    android:src="@drawable/promo_1" />
+
+                <ImageView
+                    android:id="@+id/promo2"
+                    android:layout_width="322dp"
+                    android:layout_height="219dp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_toRightOf="@id/promo1"
+                    android:src="@drawable/promo_3" />
+
+                <ImageView
+                    android:layout_width="322dp"
+                    android:layout_height="219dp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_toRightOf="@id/promo1"
+                    android:src="@drawable/promo_4" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/lagi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/horizontal_two"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="@string/title"
+            android:textColor="#000"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/goodtime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lagi"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="@string/titlelagi" />
+
+        <HorizontalScrollView
+            android:id="@+id/hroizontal3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/goodtime"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/linear_lokasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="20dp">
+
+
+                                <ImageView
+                                    android:id="@+id/img_1"
+                                    android:layout_width="70dp"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/traveloka" />
+
+                                <TextView
+                                    android:id="@+id/tv_kota"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_toRightOf="@+id/img_1"
+                                    android:text="Traveloka"
+                                    android:textColor="#000"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/tv_kota"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_toRightOf="@+id/img_1"
+                                    android:text="Traveloka"
+                                    android:textSize="12sp" />
+
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginTop="20dp">
+
+
+                                <ImageView
+                                    android:id="@+id/img_2"
+                                    android:layout_width="70dp"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/traveloka" />
+
+                                <TextView
+                                    android:id="@+id/tv_kota_2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_toRightOf="@+id/img_2"
+                                    android:text="Traveloka"
+                                    android:textColor="#000"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/tv_kota_2"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_toRightOf="@+id/img_2"
+                                    android:text="Traveloka"
+                                    android:textSize="12sp" />
+
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/juduul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hroizontal3"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Go Beyond"
+            android:textColor="#000"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/judul2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/juduul"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="Plan your travel easily with our destination guide" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="168dp"
+            android:layout_below="@id/judul2"
+            android:layout_marginTop="20dp"
+            android:id="@+id/tobalake"
+            android:src="@drawable/toba_lake" />
+
+        <HorizontalScrollView
+            android:id="@+id/horizontal_three"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tobalake"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/traveloka_promos"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/promo6"
+                    android:layout_width="@dimen/_322sdp"
+                    android:layout_height="@dimen/_219sdp"
+                    android:src="@drawable/labuan_bajo" />
+
+                <ImageView
+                    android:id="@+id/promo5"
+                    android:layout_width="322dp"
+                    android:layout_height="219dp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_toRightOf="@id/promo1"
+                    android:src="@drawable/bromo" />
+
+                <ImageView
+                    android:layout_width="322dp"
+                    android:layout_height="219dp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_toRightOf="@id/promo1"
+                    android:src="@drawable/magelang" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </RelativeLayout>
+</ScrollView>

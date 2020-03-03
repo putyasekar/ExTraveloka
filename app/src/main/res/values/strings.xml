@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">UTS Traveloka</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search">Search for items, destinations...</string>
+    <string name="home">Home</string>
+    <string name="saved">Saved</string>
+    <string name="booking">My Booking</string>
+    <string name="inbox">My Inbox</string>
+    <string name="account">My Account</string>
+    <string name="flights">Flights</string>
+    <string name="hotels">Hotels</string>
+    <string name="flightandhotel">FH</string>
+    <string name="xperience">Xperience</string>
+    <string name="eats">Eats</string>
+    <string name="trains">Trains</string>
+    <string name="bus">Bus</string>
+    <string name="airport">Airport</string>
+    <string name="car">Car</string>
+    <string name="all">More..</string>
+    <string name="jr">JR Pass</string>
+    <string name="bill">Bills</string>
+    <string name="movies">Movie</string>
+    <string name="insurance">Insurance</string>
+    <string name="visa">VISA</string>
+    <string name="international">Intern</string>
+    <string name="gift">Gift</string>
+    <string name="data">Data</string>
+    <string name="status">Status</string>
+    <string name="title_one">The Latest from Traveloka</string>
+    <string name="desc">Stay informed of the latest feature updates</string>
+    <string name="desc1">Lorem ipsum dolor sit amet</string>
+    <string name="title_two">Ongoing Promos</string>
+    <string name="save_money">Always save more with our special offers</string>
+    <string name="title">Find Fun Things to Do Nearby</string>
+    <string name="titlelagi">A good time might be just around the corner</string>
+    <string name="traveloka">Traveloka</string>
+</resources>
